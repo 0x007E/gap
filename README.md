@@ -14,8 +14,8 @@ The `GAP` project is based on a pcb with an [ATmega3208/ATmega4808](#additional-
 
 | Type      | File               | Description              |
 |:---------:|:------------------:|:-------------------------|
-| Schematic | [pdf](https://github.com/0x007E/gap/releases/latest/download/schematic.pdf) / [cadlab](https://cadlab.io/project/?/main/files) | Schematic files |
-| Board | [pdf](https://github.com/0x007E/gap/releases/latest/download/pcb.pdf) / [cadlab](https://cadlab.io/project/?/main/files) | Board file |
+| Schematic | [pdf](https://github.com/0x007E/gap/releases/latest/download/schematic.pdf) / [cadlab](https://cadlab.io/project/29666/main/files) | Schematic files |
+| Board | [pdf](https://github.com/0x007E/gap/releases/latest/download/pcb.pdf) / [cadlab](https://cadlab.io/project/29666/main/files) | Board file |
 | Drill | [pdf](https://github.com/0x007E/gap/releases/latest/download/drill.pdf) | Drill file |
 | PCB | [zip](https://github.com/0x007E/gap/releases/latest/download/kicad.zip) / [tar](https://github.com/0x007E/gap/releases/latest/download/kicad.tar.gz) | KiCAD/Gerber/BoM/Drill files |
 | Mechanical | [zip](https://github.com/0x007E/gap/releases/latest/download/freecad.zip) / [tar](https://github.com/0x007E/gap/releases/latest/download/freecad.tar.gz) | FreeCAD/Housing and PCB (STEP) files     |
