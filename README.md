@@ -2,7 +2,7 @@
 
 # `GAP` - GamePad (HTLboy)
 
-The `GAP` project is based on a pcb with an [ATmega3208/ATmega4808](#additional-information) and is extended with two [Matrix LED Displays](https://github.com/0x007e/mad). It can be used as controller for games and graphical things. The `GAP` has 8 buttons (1 Cross `[4]`, A & B `[2]`, Select `[1]` and Start `[1]`)), 4 LEDs, a potentiometer to control the volume and a built in `UPDI` programmer for the pad itself and the connected displays. Data for displays is sent over `SPI`. The `GAP` also implements a battery controller for [LiPo Batteries](#additional-information). They can be charged over USB. The battery can drive the system for about ~5 hours. There is also a `TWI` interface to load games from an `EEPROM` into the system.
+The `GAP` project is based on a pcb with an [ATmega3208/ATmega4808](#additional-information) and is extended with two [Matrix LED Displays](https://github.com/0x007e/mad). It can be used as controller for games and graphical things. The `GAP` has 8 buttons (1 Cross `[4]`, A & B `[2]`, Select `[1]` and Start `[1]`), 4 LEDs, a potentiometer to control the volume and a built in `UPDI` programmer for the pad itself and the connected displays. Data for displays is sent over `SPI`. The `GAP` also implements a battery controller for [LiPo Batteries](#additional-information). They can be charged over USB. The battery can drive the system for about ~5 hours. There is also a `TWI` interface to load games from an `EEPROM` into the system.
 
 | Experience | Level |
 |:------------|:-----:|
@@ -95,13 +95,13 @@ For programming the `GAP` is necessary to power the system with `5V` over the US
 #          |      A                     |  1 +---+ Program GAP
 #          |      M                     +--+-+
 #          |      E                        |
-#          |      P                     +--+-+
-#          |      A                     | J3 | <-+
-#          |      D                     +--+-+    \
-#          |                               |       + Enable UPDI
-#          |                            +--+-+    /
-#          |                            | J4 | <-+ 
-#          |                            +--+-+
+#          |      P                        |
+#          |      A            SW 11       |
+#          |      D        U +---+---+     |
+#          |               P | X | X |     |
+#          |               D | X | X |     |
+#          |               I |   |   |     |
+#          |                 +---+---+     |
 #          |                     +---+     |
 #          | +-------+           | U |     |
 #          +-+  TWI  +-----------+ S +-----+
@@ -109,19 +109,19 @@ For programming the `GAP` is necessary to power the system with `5V` over the US
 #                                +-+-+
 #                                  |
 #                                  |
-#                    +-------------+-------+
-#                    |                     |
-#                    | +-----------------+ |
-#                    | | AVR-Dude        | |
-#                    | | ~~~~~~~~        | |
-#                    | | ~~~~~           | |
-#                    | | ~~~~~~~~~~~~    | |
-#                    | |                 | |
-#                    | +-----------------+ |
-#                    |                     |
-#                    | Computer            |
-#                    |                     |
-#                    +---------------------+
+#                    +-------------+---------+
+#                    |                       |
+#                    | +-------------------+ |
+#                    | | AVR-Dude/TeraTerm | |
+#                    | | ~~~~~~~~          | |
+#                    | | ~~~~~             | |
+#                    | | ~~~~~~~~~~~~      | |
+#                    | |                   | |
+#                    | +-------------------+ |
+#                    |                       |
+#                    | Computer              |
+#                    |                       |
+#                    +-----------------------+
 ```
 
 ## FUSES
@@ -173,7 +173,7 @@ The gamepad can be controlled with different libraries to read the input, set th
 With the attached demo library (`MAD_LIB`) it is quiet easy to use the display. To setup the matrix display library some `defines` needs to be adjusted.
 
 ``` c
-// Setup the number of displays that are cascaded
+// Setup the number of displays that are cascaded in matrix.h
 #ifndef MATRIX_DISPLAYS
     #define MATRIX_DISPLAYS 2
 #endif
