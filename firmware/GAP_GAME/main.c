@@ -19,8 +19,8 @@ int main(void)
 	unsigned char x_pos = (MATRIX_ROWS / 2), y_pos = (MATRIX_DISPLAYS * MATRIX_COLUMNS / 2);
 	unsigned char new_dot = 1, dot_x_pos, dot_y_pos;
 
-	TCA0.SINGLE.CTRLA = TCA_SINGLE_CLKSEL2_bm | TCA_SINGLE_ENABLE_bm;
-	TCB0.CTRLA = TCB_CLKSEL1_bm | TCB_ENABLE_bm; 
+	TCA0.SINGLE.CTRLA = TCA_SINGLE_CLKSEL_2_bm | TCA_SINGLE_ENABLE_bm;
+	TCB0.CTRLA = TCB_CLKSEL_1_bm | TCB_ENABLE_bm; 
 
 	while (1)
 	{
