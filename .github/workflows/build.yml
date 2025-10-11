@@ -85,7 +85,7 @@ jobs:
       DFP: "ATmega_DFP.2.2.509"
       DEVICE: "atmega4808"
       OUTPUT_FOLDER: "./output"
-      LIBRARY_PATH: "./lib"
+      LIBRARY_PATH: "./firmware/lib"
       PROJECT_PATH: "./firmware/GAP_GAME"
       FIRMWARE_NAME: "gap_game_m4808"
       PREPROCESSOR: "-DF_CPU=20000000UL"
