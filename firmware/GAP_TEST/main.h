@@ -9,7 +9,7 @@
 	#include <avr/io.h>
 	#include <util/delay.h>
 
-	#include "../lib/system/system.h"
-	#include "../lib/spi/spi.h"
+	#include "../lib/hal/avr0/system/system.h"
+	#include "../lib/hal/avr0/spi/spi.h"
 
 #endif /* MAIN_H_ */

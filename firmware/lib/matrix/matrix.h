@@ -105,7 +105,7 @@
     #include <avr/io.h>
     #include <util/delay.h>
 
-    #include "../../lib/spi/spi.h"
+    #include "../../lib/hal/avr0/spi/spi.h"
 
     void matrix_init(void);
     void matrix_enable(void);
