@@ -152,7 +152,7 @@ jobs:
     - name: upload-firmware
       uses: actions/upload-artifact@v4
       with:
-        name: firmware-m4808-demo
+        name: firmware-demo-build-m4808
         path: ${{ env.OUTPUT_FOLDER }}
         retention-days: 1
   
