@@ -2,6 +2,8 @@
 
 # `GAP` - GamePad (HTLboy)
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/0x007E/gap)
+
 The `GAP` project is based on a pcb with an [ATmega3208/ATmega4808](#additional-information) and is extended with two [Matrix LED Displays](https://github.com/0x007e/mad). It can be used as controller for games and graphical things. The `GAP` has 8 buttons (1 Cross `[4]`, A & B `[2]`, Select `[1]` and Start `[1]`), 4 LEDs, a potentiometer to control the volume and a built in `UPDI` programmer for the pad itself and the connected displays. Data for displays is sent over `SPI`. The `GAP` also implements a battery controller for [LiPo Batteries](#additional-information). They can be charged over USB. The battery can drive the system for about ~5 hours. There is also a `TWI` interface to load games from an `EEPROM` into the system.
 
 | Experience | Level |
